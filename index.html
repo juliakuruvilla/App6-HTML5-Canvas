@@ -91,10 +91,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
 			var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100); //makes gradient for the colors of the rectangle
-				gradient.addColorStop(0, "blue"); //sets blue as the first color
-				gradient.addColorStop(1, "purple"); //sets purple as the next color
-				context.fillStyle = gradient; //applies gradient to rectangle
-				context.fillRect(10, 10, 280, 205); //fills in the rectangle with (x starting, y starting, width, height)
+			gradient.addColorStop(0, "blue"); //sets blue as the first color
+			gradient.addColorStop(1, "purple"); //sets purple as the next color
+			context.fillStyle = gradient; //applies gradient to rectangle
+			context.fillRect(10, 10, 280, 205); //fills in the rectangle with (x starting, y starting, width, height)
 		} //closes function			
 		</script>
 		
@@ -102,12 +102,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		function drawName() {  //declares the function for drawing name
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
-				context.font = "60px Arial";  //changes font size
-				context.fillText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
+			context.font = "60px Arial";  //changes font size
+			context.fillText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
 		}
 		</script>
 		
-		<script>  //code to create the function that calls to display an image
+		<!--<script>  //code to create the function that calls to display an image
 		function drawImg() {  //declares the function for drawing image
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
@@ -118,7 +118,21 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  			};
 		}			
 			
-		</script>	
+		</script> -->
+		
+		
+		<script> // functionn that uploads image to canvas
+		function drawImg() { // declares function so it can be called later
+ 		var a = document.getElementById("a"); // puts function on canvas with id "a"
+ 		var context = a.getContext("2d"); // draws 2d image on canvas
+ 		var img = new Image(); // new image is being inserted in canvas
+  			img.src = "App6Picture.jpg"; // calls on image on file
+  			img.onload = function() { // function for image upload
+  			context.drawImage(img, 175, 100, 100, 100); // final display of image on to canvas (img, x, y, width, height)
+ 		 	};
+		}
+		</script>
+		
 		
 		<center>
 		<a onclick = "drawRect();" class="w3-btn w3-grey w3-round-xxlarge">Draw a rectangle</a>  <!--creates button to put rectangle on canvas-->
