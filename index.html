@@ -99,9 +99,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 				
 		</script>
 		
-		<center>
-		<a onclick="drawRect();" class="w3-btn w3-grey w3-round-xxlarge">Draw a rectangle</a>  <!--creates button to put rectangle on canvas-->
+		<script> //code to create the function that calls to display my name
+		function drawName() {
+			var a = document.getElementById("a"); //helps to easily find the canvas element
+			var context = a.getContext("2d"); //draws the 2d image on the canvas
+			context.font = "30px Arial";
+			context.strokeText("Hello World", 50, 50);
+		}
+		</script>
 		
+		<center>
+		<a onclick = "drawRect();" class="w3-btn w3-grey w3-round-xxlarge">Draw a rectangle</a>  <!--creates button to put rectangle on canvas-->
+		<a onclick = "drawName();" class="w3-btn w3-grey w3-round-xxlarge">Draw my name</a>      <!--creates button to put my name on canvas-->
 		</center>
 		
 	</div>	
