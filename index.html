@@ -94,7 +94,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 				gradient.addColorStop(0, "blue"); //sets blue as the first color
 				gradient.addColorStop(1, "purple"); //sets purple as the next color
 				context.fillStyle = gradient; //applies gradient to rectangle
-				context.fillRect(10, 50, 250, 200); //fills in the rectangle with (x starting, y starting, width, height)
+				context.fillRect(10, 10, 280, 205); //fills in the rectangle with (x starting, y starting, width, height)
 		} //closes function			
 		</script>
 		
@@ -102,8 +102,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		function drawName() {  //declares the function for drawing name
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
-				context.font = "30px Arial";  //changes font size
-				context.fillText("Julia", 10, 10);  //displays my name with ("name", x starting, y starting)
+				context.font = "60px Arial";  //changes font size
+				context.fillText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
 		}
 		</script>
 		
@@ -114,7 +114,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			var img = new Image(); //declares new image on canvas
   				img.src = "appPic.jpg"; //calls to image in files
   				img.onload = function() {   //another function to upload pic
-  				context.drawImage(img, 25, 200, 100, 100); //display image with (img, x starting, y starting, width, height)
+  				context.drawImage(img, 10, 200, 100, 100); //display image with (img, x starting, y starting, width, height)
  			};
 		}			
 			
