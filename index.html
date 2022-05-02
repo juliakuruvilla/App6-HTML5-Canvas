@@ -85,11 +85,19 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		<p><center><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></center></canvas></p> <!--added canvas with border and centered it-->
 		
 		<script>  //code to create the function that calls to draw a rectangle
-			funciton drawRect() {  //declares the function for drawing rectangle
+		funciton drawRect() {  //declares the function for drawing rectangle
+			var a_canvas = document.getElementById("a"); //helps to easily find the canvas element
+			var b_context = b_canvas.getContext("2d"); //draws the 2d image on the canvas
+			b_context.strokeStyle = #990066; //sets the color
+			b_context.fillRect(50, 50, 200, 150); //fills in the rectangle
 				
+				
+		</script>
+		
+		<center>
+		<a onclick="drawRect();" class="w3-btn w3-green w3-round-xxlarge">Rectangle</a>	//creates button to put rectangle on canvas
 		
 		
-		var a_canvas = document.getElementById("a"); //helps to easily find the canvas element
 	</div>	
 </div>
 
