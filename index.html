@@ -103,25 +103,25 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
 			context.font = "60px Arial";  //changes font size
-			context.strokeText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
+			context.strokeText("Julia", 10, 70);  //displays my name with ("name", x starting, y starting)
 		}
 		</script>
 		
-		<!--<script>  //code to create the function that calls to display an image
+		<script>  //code to create the function that calls to display an image
 		function drawImg() {  //declares the function for drawing image
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
 			var img = new Image(); //declares new image on canvas
   				img.src = "appPic.jpg"; //calls to image in files
   				img.onload = function() {   //another function to upload pic
-  				context.drawImage(img, 10, 200, 100, 100); //display image with (img, x starting, y starting, width, height)
+  				context.drawImage(img, 150, 100, 50, 50); //display image with (img, x starting, y starting, width, height)
  			};
 		}			
 			
-		</script> -->
+		</script>
 		
 		
-		<script> // functionn that uploads image to canvas
+		<!--<script> // functionn that uploads image to canvas
 		function drawImg() { // declares function so it can be called later
  		var a = document.getElementById("a"); // puts function on canvas with id "a"
  		var context = a.getContext("2d"); // draws 2d image on canvas
@@ -131,7 +131,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   			context.drawImage(img, 175, 100, 100, 100); // final display of image on to canvas (img, x, y, width, height)
  		 	};
 		}
-		</script>
+		</script> -->
 		
 		
 		<center>
