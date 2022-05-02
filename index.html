@@ -71,6 +71,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>  <!-- directs to page one once button is pressed -->
 	
+	<p> </p>
+	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
@@ -86,13 +88,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		
 		<script>  //code to create the function that calls to draw a rectangle
 		funciton drawRect() {  //declares the function for drawing rectangle
-			var a_canvas = document.getElementById("a"); //helps to easily find the canvas element
-			var a_context = a_canvas.getContext("2d"); //draws the 2d image on the canvas
-			var gradient = a_context.createLinearGradient(0, 0, 200, 0); //makes gradient for the colors of the rectangle
-			gradient.addColorStop(0, "blue"); //sets blue as the first color
-			gradient.addColorStop(1, "purple"); //sets purple as the next color
-			a_context.fillStyle = gradient; //applies gradient to rectangle
-			a_context.fillRect(50, 50, 200, 150); //fills in the rectangle with (x starting, y starting, width, height)
+			var a = document.getElementById("a"); //helps to easily find the canvas element
+			var context = a.getContext("2d"); //draws the 2d image on the canvas
+			var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100); //makes gradient for the colors of the rectangle
+				gradient.addColorStop(0, "blue"); //sets blue as the first color
+				gradient.addColorStop(1, "purple"); //sets purple as the next color
+				context.fillStyle = gradient; //applies gradient to rectangle
+				context.fillRect(50, 50, 200, 150); //fills in the rectangle with (x starting, y starting, width, height)
 		} //closes function		
 				
 		</script>
