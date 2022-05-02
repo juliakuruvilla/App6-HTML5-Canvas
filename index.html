@@ -94,7 +94,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 				gradient.addColorStop(0, "blue"); //sets blue as the first color
 				gradient.addColorStop(1, "purple"); //sets purple as the next color
 				context.fillStyle = gradient; //applies gradient to rectangle
-				context.fillRect(50, 50, 200, 150); //fills in the rectangle with (x starting, y starting, width, height)
+				context.fillRect(10, 10, 280, 205); //fills in the rectangle with (x starting, y starting, width, height)
 		} //closes function		
 				
 		</script>
@@ -103,8 +103,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		function drawName() {
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
-			context.font = "30px Arial";
-			context.strokeText("Hello World", 50, 50);
+			context.font = "30px Arial";  //changes font size
+			context.strokeText("Julia", 50, 50);  //displays my name with ("name", x starting, y starting)
 		}
 		</script>
 		
