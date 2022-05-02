@@ -103,7 +103,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
 			context.font = "60px Arial";  //changes font size
-			context.fillText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
+			context.strokeText("Julia", 10, 30);  //displays my name with ("name", x starting, y starting)
 		}
 		</script>
 		
@@ -126,7 +126,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  		var a = document.getElementById("a"); // puts function on canvas with id "a"
  		var context = a.getContext("2d"); // draws 2d image on canvas
  		var img = new Image(); // new image is being inserted in canvas
-  			img.src = "App6Picture.jpg"; // calls on image on file
+  			img.src = "appPic.jpg"; // calls on image on file
   			img.onload = function() { // function for image upload
   			context.drawImage(img, 175, 100, 100, 100); // final display of image on to canvas (img, x, y, width, height)
  		 	};
