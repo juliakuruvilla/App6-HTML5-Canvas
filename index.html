@@ -87,7 +87,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		<p><center><canvas id="a" width="300" height="225" style="border:1px solid #000000;"></center></canvas></p> <!--added canvas with border and centered it-->
 		
 		<script>  //code to create the function that calls to draw a rectangle
-		funciton drawRect() {  //declares the function for drawing rectangle
+		function drawRect() {  //declares the function for drawing rectangle, FIXED MISSPELLING
 			var a = document.getElementById("a"); //helps to easily find the canvas element
 			var context = a.getContext("2d"); //draws the 2d image on the canvas
 			var gradient = context.createRadialGradient(75, 50, 5, 90, 60, 100); //makes gradient for the colors of the rectangle
